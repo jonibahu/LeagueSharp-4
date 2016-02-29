@@ -159,7 +159,7 @@ namespace TwistedFate
 
         private static void Obj_AI_Hero_OnProcessSpellCast(Obj_AI_Base sender, GameObjectProcessSpellCastEventArgs args)
         {
-            if (sender.IsMe && args.SData.Name == "gate" && Config.Item("AutoY").GetValue<bool>())
+            if (sender.IsMe && args.SData.Name == "Gate" && Config.Item("AutoY").GetValue<bool>())
             {
                 CardSelector.StartSelecting(Cards.Yellow);
             }
